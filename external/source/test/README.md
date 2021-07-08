@@ -70,6 +70,13 @@ The verify test suite is the main test suite:
  * `test/common/run-tests`: Run all tests
  * `test/verify/check-*`: Run the selected tests
 
+## Pixel tests
+
+The verify test suite contains ["pixel tests"]({{ site.baseurl }}/blog/pixel-testing.html).
+Make sure to create the test/reference submodule before running tests which contain pixel tests.
+
+ * test/common/pixel-tests pull
+
 ## Test Configuration
 
 You can set these environment variables to configure the test suite:
@@ -113,7 +120,7 @@ You can set these environment variables to configure the test suite:
 The code under test is executed in one or more dedicated virtual
 machines, called the "test machines".  Fresh test machines are started
 for each test. See the
-[bots documentation]({{ site.baseurl }}/external/bots/README.html)
+[bots documentation](https://github.com/cockpit-project/bots/blob/main/README.md)
 for details about the tools and configuration for these.
 
 These test machine images don't contain any Cockpit code yet.  You can build
